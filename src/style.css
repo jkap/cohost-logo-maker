@@ -7,14 +7,20 @@
     --sans-font: "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont,
         "Avenir Next", Avenir, "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI",
         Arial, Helvetica, "Helvetica Neue", sans-serif;
+
+    --bg: #fff9f2;
+    --accent-bg: #ded9d3;
+    --text: #191919;
+    --text-light: #686664;
+    --accent: #83254f;
 }
 
-.league-extended {
-    font-family: "League Mono Extended";
-    font-weight: 600;
-}
-
-.league {
-    font-family: "League Mono";
-    font-weight: 600;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #191919;
+        --accent-bg: #2e2d2c;
+        --text: #ded9d3;
+        --text-light: #a09c98;
+        --accent: #ffab5c;
+    }
 }
