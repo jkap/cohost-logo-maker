@@ -1,0 +1,20 @@
+@import "@fontsource/atkinson-hyperlegible";
+@import "@fontsource/league-mono-extended/600.css";
+@import "@fontsource/league-mono/600.css";
+@import "simpledotcss/simple.min.css";
+
+:root {
+    --sans-font: "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont,
+        "Avenir Next", Avenir, "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI",
+        Arial, Helvetica, "Helvetica Neue", sans-serif;
+}
+
+.league-extended {
+    font-family: "League Mono Extended";
+    font-weight: 600;
+}
+
+.league {
+    font-family: "League Mono";
+    font-weight: 600;
+}

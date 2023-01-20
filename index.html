@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>cohost logo generator</title>
+    </head>
+    <body>
+        <header>
+            <h1>cohost logo generator</h1>
+            <p>
+                made by <a href="https://cohost.org/jkap">jae</a>. it's not
+                perfect but it's better than opening affinity designer every
+                time you want to make a joke.
+            </p>
+            <p>
+                works best in chromium browsers (requres
+                <a
+                    href="https://caniuse.com/mdn-api_canvasrenderingcontext2d_letterspacing"
+                    target="_blank"
+                    rel="noreferrer"
+                    >canvas letter spacing</a
+                >)
+            </p>
+        </header>
+        <main>
+            <canvas
+                id="canvas"
+                width="792"
+                height="152"
+                style="height: 152px; margin: 0 auto"
+            ></canvas>
+            <div>
+                <button onclick="DownloadCanvasAsImage();">download</button>
+                <button onclick="draw();">re-draw (fix broken text)</button>
+                <label>
+                    text <input type="text" id="main-text" value="boyrap" />
+                </label>
+                <label>
+                    subtext <input type="text" id="sub-text" value="premium!" />
+                </label>
+                <label>
+                    base x
+                    <input type="number" min="0" value="16" step="1" id="dx" />
+                </label>
+                <hr />
+
+                <label>
+                    background color
+                    <input type="color" id="bg-color" value="#ffffff" />
+                </label>
+                <label>
+                    foreground color
+                    <input type="color" id="fg-color" value="#83254f" />
+                </label>
+                <label>
+                    <label>
+                        accent color
+                        <input type="color" id="acc-color" value="#FFAB5C" />
+                    </label>
+                </label>
+            </div>
+        </main>
+        <footer>
+            <p>
+                you should
+                <a href="https://cohost.org/rc/welcome">check out cohost</a>.
+            </p>
+            <p>
+                the cohost logo is set in
+                <span class="league-extended"
+                    >league mono extended semibold</span
+                >
+                and <span class="league">league mono semibold</span>. this
+                citation is needlessly specific to trick your browser into
+                actually loading the fonts we need. there's probably a better
+                way to do this but i don't care enough to find it.
+            </p>
+        </footer>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
