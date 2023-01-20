@@ -126,4 +126,7 @@ accInput.oninput = (e) => {
     draw();
 };
 
-draw();
+Promise.all([
+    document.fonts.load("600 81px 'League Mono Extended'"),
+    document.fonts.load("bold 60px 'League Mono'"),
+]).then(() => draw());
