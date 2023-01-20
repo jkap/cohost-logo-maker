@@ -47,15 +47,16 @@ function draw() {
         ctx.font = "600 81px 'League Mono Extended'";
         // @ts-ignore
         ctx.letterSpacing = "-.07em";
-        const firstTwoMetrics = ctx.measureText(text.slice(0, 2));
+        const splitText = [...text];
+        const firstTwoMetrics = ctx.measureText(splitText.slice(0, 2).join(""));
         ctx.fillStyle = fgColor;
         ctx.fillText(
-            text.slice(2),
+            splitText.slice(2).join(""),
             dx + firstTwoMetrics.width + margin,
             107 + margin
         );
         ctx.fillStyle = bgColor;
-        ctx.fillText(text.slice(0, 2), dx + margin, 107 + margin);
+        ctx.fillText(splitText.slice(0, 2).join(""), dx + margin, 107 + margin);
 
         ctx.font = "bold 60px 'League Mono'";
 
