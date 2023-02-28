@@ -1,23 +1,26 @@
 {
-  "name": "cohost-logo-maker",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "prettier": "^2.8.3",
-    "typescript": "^4.9.3",
-    "vite": "^4.0.0",
-    "vite-plugin-minify": "^1.5.2"
-  },
-  "dependencies": {
-    "@fontsource/atkinson-hyperlegible": "^4.5.11",
-    "@fontsource/league-mono": "^4.5.3",
-    "@fontsource/league-mono-extended": "^4.5.3",
-    "simpledotcss": "^2.1.1"
-  }
+    "name": "cohost-logo-maker",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "source": "index.html",
+    "browserslist": "> 0.5%, last 2 versions, not dead",
+    "scripts": {
+        "dev": "parcel",
+        "build": "parcel build"
+    },
+    "devDependencies": {
+        "@parcel/config-default": "^2.8.3",
+        "@parcel/core": "^2.8.3",
+        "@parcel/validator-typescript": "^2.8.3",
+        "parcel": "^2.8.3",
+        "prettier": "^2.8.3",
+        "typescript": "^4.9.3"
+    },
+    "dependencies": {
+        "@fontsource/atkinson-hyperlegible": "^4.5.11",
+        "@fontsource/league-mono": "^4.5.3",
+        "@fontsource/league-mono-extended": "^4.5.3",
+        "simpledotcss": "^2.1.1"
+    }
 }

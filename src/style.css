@@ -1,7 +1,7 @@
-@import "@fontsource/atkinson-hyperlegible";
-@import "@fontsource/league-mono-extended/600.css";
-@import "@fontsource/league-mono/600.css";
-@import "simpledotcss/simple.css";
+@import "npm:@fontsource/atkinson-hyperlegible";
+@import "npm:@fontsource/league-mono-extended/600.css";
+@import "npm:@fontsource/league-mono/600.css";
+@import "npm:simpledotcss/simple.css";
 
 :root {
     --sans-font: "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont,
