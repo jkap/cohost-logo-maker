@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>cohost logo generator</title>
-        <link rel="stylesheet" href="/src/style.css" />
+        <link rel="stylesheet" href="/src/style.css"/>
         <script type="module" src="/src/main.ts"></script>
     </head>
     <body>
@@ -16,13 +16,12 @@
                 time you want to make a joke.
             </p>
             <p>
-                works best in chromium browsers (requres
-                <a
+                works best in browsers with <a
                     href="https://caniuse.com/mdn-api_canvasrenderingcontext2d_letterspacing"
                     target="_blank"
                     rel="noreferrer"
-                    >canvas letter spacing</a
-                >)
+                    >canvas letter spacing</a>.
+                 (chromium and recent firefox)
             </p>
         </header>
         <main>
@@ -36,29 +35,29 @@
                 <button onclick="DownloadCanvasAsImage();">download</button>
                 <button onclick="draw();">re-draw (fix broken text)</button>
                 <label>
-                    text <input type="text" id="main-text" value="boyrap" />
+                    text <input type="text" id="main-text" value="boyrap"/>
                 </label>
                 <label>
-                    subtext <input type="text" id="sub-text" value="premium!" />
+                    subtext <input type="text" id="sub-text" value="premium!"/>
                 </label>
                 <label>
                     base x
-                    <input type="number" min="0" value="16" step="1" id="dx" />
+                    <input type="number" min="0" value="16" step="1" id="dx"/>
                 </label>
-                <hr />
+                <hr/>
 
                 <label>
                     background color
-                    <input type="color" id="bg-color" value="#ffffff" />
+                    <input type="color" id="bg-color" value="#ffffff"/>
                 </label>
                 <label>
                     foreground color
-                    <input type="color" id="fg-color" value="#83254f" />
+                    <input type="color" id="fg-color" value="#83254f"/>
                 </label>
                 <label>
                     <label>
                         accent color
-                        <input type="color" id="acc-color" value="#FFAB5C" />
+                        <input type="color" id="acc-color" value="#FFAB5C"/>
                     </label>
                 </label>
             </div>
@@ -79,6 +78,6 @@
                 src="https://api.jkap.io/noscript.gif"
                 alt=""
                 referrerpolicy="no-referrer-when-downgrade"
-        /></noscript>
+/></noscript>
     </body>
 </html>
